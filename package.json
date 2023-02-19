@@ -4,6 +4,7 @@
   "scripts": {
     "prepare": "simple-git-hooks",
     "dev:packages": "turbo run dev --filter=@unlogin/*... --no-cache --parallel --continue",
+    "build:packages": "turbo run build --filter=@unlogin/*... --cache-dir='.turbo'",
     "lint": "turbo run lint --cache-dir='.turbo'",
     "test": "turbo run test --cache-dir='.turbo'",
     "link-packages": "pnpm --filter=@unlogin/*... link-packages",

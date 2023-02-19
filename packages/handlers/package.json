@@ -1,0 +1,31 @@
+{
+  "name": "@unlogin/handlers",
+  "version": "0.1.0",
+  "typings": "./dist/index.d.ts",
+  "main": "./dist/index.js",
+  "description": "",
+  "type": "module",
+  "exports": {
+    "import": "./dist/index.js"
+  },
+  "files": [
+    "./dist",
+    "./src"
+  ],
+  "scripts": {
+    "dev": "tsup-node --watch",
+    "build": "tsup-node",
+    "lint": "tsc --noEmit -p ./tsconfig.build.json",
+    "test": "vitest run --passWithNoTests --watch false",
+    "test-dev": "vitest",
+    "link-packages": "pnpm link --global"
+  },
+  "dependencies": {
+    "hono": "^3.0.0"
+  },
+  "devDependencies": {
+    "tsup": "^6.6.3",
+    "vitest": "^0.28.5",
+    "@unlogin/esbuild-plugin-dts": "workspace:^"
+  }
+}
