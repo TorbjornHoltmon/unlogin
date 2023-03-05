@@ -1,5 +1,5 @@
 {
-  "name": "@unlogin/handlers",
+  "name": "@unlogin/utils",
   "version": "0.1.0",
   "typings": "./dist/index.d.ts",
   "main": "./dist/index.js",
@@ -21,7 +21,7 @@
     "link-packages": "pnpm link --global"
   },
   "dependencies": {
-    "hono": "^3.0.3"
+    "@unlogin/errors": "workspace:^"
   },
   "devDependencies": {
     "@unlogin/esbuild-plugin-dts": "workspace:^",

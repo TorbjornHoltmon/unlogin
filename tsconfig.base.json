@@ -6,11 +6,11 @@
     "strict": true,
     "strictNullChecks": true,
     "skipLibCheck": true,
-    "moduleResolution": "node",
     "esModuleInterop": true,
-    "types": ["node"],
+    "types": ["web"],
     "declarationMap": true,
     "declaration": true,
-    "resolveJsonModule": true
+    "sourceMap": true,
+    "moduleResolution": "node"
   }
 }

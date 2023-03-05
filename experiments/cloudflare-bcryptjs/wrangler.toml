@@ -1,0 +1,12 @@
+name = "cloudflare-bcryptjs"
+type = "javascript"
+usage_model = "unbound"
+compatibility_date = "2022-12-20"
+
+
+[env.staging]
+workers_dev = false
+main = "./dist/main.js"
+
+[build]
+command = "pnpm build"

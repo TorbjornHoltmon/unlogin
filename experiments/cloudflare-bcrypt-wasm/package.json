@@ -1,0 +1,26 @@
+{
+  "name": "@unlogin/cloudflare-bcrypt-wasm",
+  "version": "1.0.0",
+  "type": "module",
+  "main": "./dist/app.js",
+  "private": true,
+  "scripts": {
+    "dev": "miniflare --wrangler-env staging --debug --modules dist/main.js",
+    "wrangler-dev": "wrangler dev src/main",
+    "build": "vite build"
+  },
+  "dependencies": {
+    "@cloudflare/workers-wasi": "^0.0.5",
+    "hono": "^3.0.3"
+  },
+  "devDependencies": {
+    "@cloudflare/workers-types": "^4.20230228.0",
+    "@types/node": "^18.14.6",
+    "dotenv": "^16.0.3",
+    "miniflare": "^2.12.1",
+    "vite": "^4.1.4",
+    "wrangler": "^2.12.0",
+    "vite-plugin-wasm": "^3.2.1",
+    "@rollup/plugin-wasm": "^6.1.2"
+  }
+}

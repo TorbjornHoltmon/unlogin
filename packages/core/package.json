@@ -14,16 +14,18 @@
   ],
   "scripts": {
     "dev": "tsup-node --watch",
-    "build": "tsup-node",
+    "build": "tsc --project tsconfig.build.json",
     "lint": "tsc --noEmit -p ./tsconfig.build.json",
     "test": "vitest run --passWithNoTests --watch false",
     "test-dev": "vitest",
     "link-packages": "pnpm link --global"
   },
-  "dependencies": {},
+  "dependencies": {
+    "zod": "^3.21.0"
+  },
   "devDependencies": {
+    "@unlogin/esbuild-plugin-dts": "workspace:^",
     "tsup": "^6.6.3",
-    "vitest": "^0.28.5",
-    "@unlogin/esbuild-plugin-dts": "workspace:^"
+    "vitest": "^0.29.2"
   }
 }
